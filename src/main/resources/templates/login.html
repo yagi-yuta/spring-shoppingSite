@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+<head>
+<meta charset="UTF-8">
+<title>ログイン画面</title>
+</head>
+<header th:replace="header"></header>
+<body>
+	
+	<div class="login-rogo">
+		<h3 >login</h3>
+	</div>
+
+
+<main class="login-wrapper">
+	<span th:text="${message}" style="color: red"></span>
+	
+	<form action="/login" method="post">
+		<input type="text" name="name" placeholder="名前">
+		<button>ログイン</button>
+	</form>
+</main>
+
+
+</body>
+</html>

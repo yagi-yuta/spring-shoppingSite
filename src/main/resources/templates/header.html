@@ -1,0 +1,12 @@
+<header>
+	<h1>
+		<a href="/items">サンプルショッピング</a>
+	</h1>
+	
+	<div>
+		<span th:if="${@account.name != null}">こんにちは、[[${@account.name}]]さん</span>
+		<br>
+		<a th:if="${@account.name != null}" href="/logout">ログアウト</a>
+	</div>
+
+</header>

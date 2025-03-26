@@ -1,0 +1,178 @@
+body {
+	background-color: #eeeeee; /* 背景色  */
+	text-align: center; /* 中央寄せ */
+	display: flex;/*レイアウト指定　コイツでレイアウトを指定しないとダメ*/
+	flex-direction: column;/*要素を縦に*/
+	align-items: center;/*中央寄せ*/
+	
+}
+
+
+/* ヘッダー、ナビゲーションメニュー*/
+header, nav {
+	background-color: #585858; /* 背景色 */
+	color: #ffffff; /* 文字色 */
+	text-align: left;/*左寄せ*/ 
+	padding: 0.5% 0.5% 0.5% 0.5% ;
+}
+/*ヘッダー内のテキスト*/
+header h1 a {
+    color: white;  /* 普段は白 */
+    font-weight: bold;  /* 太字 */
+    text-decoration: none;  /* 下線を消す */
+}
+/*ヘッダーカーソル合わせたら（ホバー時）*/
+header h1 a:hover {
+    color: white;  /* ホバー時も白 */
+    text-decoration: underline;  /* ホバー時に下線 */
+}
+
+header {
+    width: 100%; /* 横幅を親要素いっぱいに広げる */
+	display: flex;
+	justify-content: space-between; /* 左右に配置 */
+	align-items: center; /* 垂直方向中央寄せ */
+	padding: 0.5% 0.5% 0 0.5%;
+}
+
+header div{
+	margin-top: 1.25rem;
+}
+
+header div span{
+	color: white;  /* 普段は白 */
+	font-weight: bold;  /* 太字 */
+	font-size:25px;
+} 
+
+header div a {
+	margin-top: 1.0rem;
+	 float: right; /* aタグを右に寄せる */
+	 color: white;  /* 普段は白 */
+	 font-weight: bold;  /* 太字 */
+	 font-size:20px
+}
+
+
+
+
+/*ログインビューのメイン*/
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #585858;  /* ボーダーを追加 */
+  background-color: #ffffff;
+  width: 35%;
+  height: 40vh;
+  min-height: 350px;
+  flex-direction: column; /* 子要素を縦に並べる */
+}
+
+.login-wrapper form{
+	display: flex;   
+	flex-direction: column; /* 子要素を縦に並べる */
+	justify-content: center;
+	align-items: center;
+	margin-top:1rem;
+	margin-bottom: 4rem;
+	width: 100%; 
+}
+	
+.login-wrapper input{
+	margin-bottom:3rem;	
+	width: 65%;	
+	padding: 0.75rem 1rem; 
+	border: 3px solid #585858; 
+}
+
+.login-wrapper span{
+	padding: 10px 20px; /* ボタンの内側に余白を追加（任意） */
+	cursor: pointer; /* ボタンをクリック可能にするカーソル */
+	margin-top:1rem;
+}
+
+.login-wrapper button{
+	color: white; /* 文字色を白に設定 */
+	background-color: #585858; /* 背景色を#585858に設定 */
+	border: none; /* ボタンの枠線をなしに設定（任意） */
+	padding: 10px 20px; /* ボタンの内側に余白を追加（任意） */
+	cursor: pointer; /* ボタンをクリック可能にするカーソル */
+	width: 40%;	
+}
+
+
+
+.login-rogo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1%;
+	width: 100%; 
+}
+
+.login-rogo h3{
+	font-size: 25px;
+  }
+  
+  
+  
+  /*itemビュー*/
+  .items nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between; /*左右に配置*/
+	padding:1rem 1rem 0 1rem;
+	align-items: flex-end;
+	background-color:#666666;
+  }
+  
+  .items nav a{
+	color: white;  /* 普段は白 */
+	font-size:20px;
+	margin-right: 5px; /* 横の空白 */
+  }
+  
+  table {
+	border-collapse: collapse;
+    border: 2px solid #585858;
+    margin-top: 5%;
+	width: 80vw; 
+  }
+
+  table th{
+	border: solid 2px  #585858;
+	background-color:#666666;
+	color:#ffffff;
+	font-size: 16px;
+  }
+  
+  table td{
+  border: solid 2px  #585858;
+  background-color: white;
+font-size: 16px;
+  }
+  
+  th.No{
+	width: 2.26rem;
+	height: 1.78rem;
+  }
+  
+
+	td.item-name {
+	    text-align: left; /* 文字を左詰めに */
+	    padding:0.2rem 15rem 0.2rem 1rem; /* 右側にスペースを確保 */
+	}
+	
+	table button{
+		color: white; /* 文字色を白に設定 */
+		font-size: 16;
+		background-color: #585858; /* 背景色を#585858に設定 */
+		border: none; /* ボタンの枠線をなしに設定（任意） */
+		padding: 10px 20px; /* ボタンの内側に余白を追加（任意） */
+		cursor: pointer; /* ボタンをクリック可能にするカーソル */
+		width:100%;
+		height: 100%;
+		padding:2%;
+	}
+  
