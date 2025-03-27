@@ -5,16 +5,15 @@
 <title>Cart</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
+<body >
 	<header th:replace="header"></header>
-	<hr>
+	
 	<main>
+		<h3 id="sub-text">カート商品</h3>
 		<div th:replace="cartItem"></div>
 		<form action="/order">
-			<button>注文する</button>
+			<button class="cart-button">注文する</button>
 		</form>
 	</main>
-	<hr>
-
 </body>
 </html>

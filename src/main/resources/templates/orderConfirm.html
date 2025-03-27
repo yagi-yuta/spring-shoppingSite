@@ -8,14 +8,13 @@
 <body>
 	<header th:replace="header"></header>
 	
-	<hr>
+	
 	<main>
-		<h3>下記の内容で注文を行いますか？</h3>
-		<h3>ご注文商品</h3>
+		<h3 id="sub-text">ご注文商品</h3>
 		<span th:replace="cartItem"></span>
-		<hr>
-		<h3>お客様情報</h3>
-		<form action="/order" method="post">
+		
+		<h3 id="sub-text">お客様情報</h3>
+		<form action="/order" method="post" class="orderConfirmContent">
 			<table border="1">
 				<tr>
 					<th>お名前</th>
@@ -41,7 +40,6 @@
 			<button>この内容で注文</button>
 		</form>
 	</main>
-	<hr>
 
 </body>
 </html>

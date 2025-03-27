@@ -7,14 +7,14 @@
 </head>
 <body>
 	<header th:replace="header"></header>
-	<hr>
+	
 	<main>
-		<h3>ご注文商品</h3>
+		<h3 id="sub-text">ご注文商品</h3>
 		<span th:replace="cartItem"></span>
-		<hr>
-		<h3>お客様情報を入力してください</h3>
+	
+		<h3 id="sub-text">お客様情報を入力してください</h3>
 		<form action="/order/confirm" method="post">
-			<table border="1">
+			<table border="1" class="customerForm">
 				<tr>
 					<th>お名前</th>
 					<td>
@@ -43,7 +43,7 @@
 			<button>確認画面へ</button>
 		</form>
 	</main>
-	<hr>
+
 
 </body>
 </html>

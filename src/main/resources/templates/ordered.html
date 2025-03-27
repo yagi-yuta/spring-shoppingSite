@@ -7,16 +7,18 @@
 </head>
 <body>
 	<header th:replace="header"></header>
-	<hr>
-	<main>
-		<h3>ご注文ありがとうございました。</h3>
-		お客様の注文番号は
-		<h3>
-			<span th:text="${orderNumber}" style="color: red"></span>
-		</h3>
-		になります。
+	
+	<main class="orderedMain">
+		<div>
+			<h3>ご注文ありがとうございました。</h3>
+			<p>お客様の注文番号は</p>
+			<h3>
+				<span th:text="${orderNumber}" style="color: red"></span>
+			</h3>
+			<p>になります。</p>
+		</div>
 	</main>
-	<hr>
+
 
 </body>
 </html>
