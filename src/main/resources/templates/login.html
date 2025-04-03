@@ -14,7 +14,9 @@
 
 
 <main class="login-wrapper">
-	<span th:text="${message}" style="color: red"></span>
+	<div class="error-message-container">
+		<span th:text="${message}" style="color: red"></span>
+	</div>
 	
 	<form action="/login" method="post">
 		<input type="text" name="name" placeholder="名前">

@@ -9,10 +9,15 @@
 	<header th:replace="header"></header>
 	
 	<main>
-		<h3 id="sub-text">ご注文商品</h3>
+		<div>
+			<h3 id="sub-text">ご注文商品</h3>
+		</div>
+
 		<span th:replace="cartItem"></span>
-	
-		<h3 id="sub-text">お客様情報を入力してください</h3>
+	<div style="margin-top: 2%;">
+		<h3 id="sub-text">お客様情報を入力</h3>
+	</div>
+
 		<form action="/order/confirm" method="post">
 			<table border="1" class="customerForm">
 				<tr>

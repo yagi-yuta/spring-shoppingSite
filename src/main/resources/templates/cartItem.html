@@ -21,7 +21,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td align="right"th:colspan="${@cart.totalPrice == 0 ? 5 : 6}" th:text="'総計：' + ${@cart.totalPrice == 0 ? '0円' : #numbers.formatInteger(@cart.totalPrice, 3, 'COMMA') + '円'}"></td>
+		<td align="right"th:colspan="${@cart.totalPrice == 0 ? 5 : 6}" th:text="'総計：' + ${@cart.totalPrice == 0 ? '0円' : #numbers.formatInteger(@cart.totalPrice, 3, 'COMMA') + '円'}" class="price-td"></td>
 		<!--　colspan、セルの結合数。+ ${@cart.totalPrice == 0 ? '0円'、ｃart.totalPriceが０なら０円と表示させる機能  #numbers.formatInteger(@cart.totalPrice, 3, 'COMMA')、数字の表示フォーマット指定　３桁目でカンマをつけましょうっていう設定 -->
 		<!--th:colspan="${@cart.totalPrice == 0 ? 5 : 6} totalpriceが0円なら５つで結合　それ以外なら6つで結合　削除ボタンはカートにアイテムがないと表示されないため　つまりtotalpriceが０円だったら削除ボタンはでないようにしないといけない-->
 	</tr>

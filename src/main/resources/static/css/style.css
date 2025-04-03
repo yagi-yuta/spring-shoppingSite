@@ -30,6 +30,7 @@ img {
 }
 
 table {
+ margin-top: 2%;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -67,14 +68,20 @@ header h1 a:hover {
 
 header {
     width: 100%; /* 横幅を親要素いっぱいに広げる */
+	height: 150px;
 	display: flex;
 	justify-content: space-between; /* 左右に配置 */
 	align-items: center; /* 垂直方向中央寄せ */
 	padding: 0.5% 0.5% 0 0.5%;
+	margin-bottom:0.5%;
 }
 
 header div{
-	margin-top: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* 下に詰める */
+	align-items: flex-end;/*右に詰める*/
+	height: 100%; 
 }
 
 header div span{
@@ -88,7 +95,8 @@ header div a {
 	 float: right; /* aタグを右に寄せる */
 	 color: white;  /* 普段は白 */
 	 font-weight: bold;  /* 太字 */
-	 font-size:20px
+	 font-size:20px;
+	 text-decoration:underline;
 }
 
 /*ロゴ*/
@@ -138,31 +146,39 @@ header div a {
 	width: 40%;	
 }
 
-#sub-text {
-    text-align: left; /* 左寄せ */
-    margin-left: 0; 
+.error-message-container {
+    height: 20px; /* エラーメッセージが表示されるための高さを確保 */
 }
+
+
+#sub-text {
+	margin-top: auto;
+    display: block; 
+    text-align: left; /* 左寄せ */
+	margin-top: 0.8%;
+    margin-left: 0;
+    font-size: 25px; 
+}
+
 
 .login-rogo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1%;
+	margin: 3%;
 	width: 100%; 
 }
 
 .login-rogo h3{
 	font-size: 25px;
   }
-  
-  
-  
+
   /*itemビュー*/
   .items nav{
 	width: 100%;
 	display: flex;
 	justify-content: space-between; /*左右に配置*/
-	padding:1rem 1rem 0 1rem;
+	padding:1% 1% 0 1%;
 	align-items: flex-end;
 	background-color:#666666;
   }
@@ -171,12 +187,12 @@ header div a {
 	color: white;  /* 普段は白 */
 	font-size:20px;
 	margin-right: 5px; /* 横の空白 */
+	text-decoration: underline;
   }
   
   table {
 	border-collapse: collapse;
     border: 2px solid #585858;
-    margin-top: 5%;
 	width: 80vw;
 	table-layout: fixed; 
 	max-width:2000px;
@@ -192,7 +208,7 @@ header div a {
   table td{
   border: solid 2px  #585858;
   background-color: white;
-font-size: 16px;
+  font-size: 16px;
   }
   
 .underButton{
@@ -206,11 +222,12 @@ font-size: 16px;
 }
   
   table button{
+	color: white;
+	background-color: #585858;
+	cursor: pointer;
+	border: none;
+	margin: 2%;
 	width: 95%;
-	color: white; /* 文字色を白に設定 */
-	background-color: #585858; /* 背景色を#585858に設定 */
-	cursor: pointer; /* ボタンをクリック可能にするカーソル */
-	border: none; /* ボタンの枠線をなしに設定（任意） */
   }
 
 	/*テーブルサイズ*/
@@ -253,8 +270,8 @@ font-size: 16px;
 	width:790px;
 }
 .customerForm input{
-	width:99%;
-	height:98%;
+    width: 99.2%;
+	height:100%;
 }
 
 /**/
@@ -267,12 +284,17 @@ font-size: 16px;
 }
 .orderConfirmContent td{
 	width:790px;
+	padding-left: 1%;
 }
 
 
 .orderConfirmContent td{
 	text-align: left; /* 左寄せ */
 	margin: 2%;
+}
+
+.price-td{
+padding-left:1%;
 }
 
 .orderedMain{
