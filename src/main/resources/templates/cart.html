@@ -11,9 +11,13 @@
 	<main>
 		<h3 id="sub-text">カート商品</h3>
 		<div th:replace="cartItem"></div>
-		<form action="/order">
-			<button class="cart-button">注文する</button>
-		</form>
+		
+		<div>
+			<form action="/order">
+				<button class="underButton">注文する</button>
+			</form>
+		</div>
+
 	</main>
 </body>
 </html>

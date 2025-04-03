@@ -1,3 +1,41 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
 body {
 	background-color: #eeeeee; /* 背景色  */
 	text-align: center; /* 中央寄せ */
@@ -157,6 +195,16 @@ header div a {
 font-size: 16px;
   }
   
+.underButton{
+	color: white; /* 文字色を白に設定 */
+	background-color: #585858; /* 背景色を#585858に設定 */
+	border: none; /* ボタンの枠線をなしに設定（任意） */
+	padding: 10px 20px; /* ボタンの内側に余白を追加（任意） */
+	cursor: pointer; /* ボタンをクリック可能にするカーソル */
+	width:150px;
+	margin-top: 2%;
+}
+  
   table button{
 	width: 95%;
 	color: white; /* 文字色を白に設定 */
@@ -253,5 +301,5 @@ font-size: 16px;
 }
 
 .orderedMain div p {
-    font-size: 2.5rem; /* テキスト*
+    font-size: 2.5rem; /* テキスト*/
 }
