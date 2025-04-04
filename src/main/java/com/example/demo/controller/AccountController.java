@@ -24,7 +24,8 @@ public class AccountController {
 	@GetMapping({ "/", "/login", "/logout" })
 	public String index(
 			@RequestParam(name = "error", defaultValue = "") String error,
-			Model model) {
+			Model model) //RequestParmでURLにあるerrorを受け取る箱を用意 defaultvalueは最初に入ってる値　それらをString方のerrorで送ってる　Modelに関して　これは作成したModelクラスではなくSpringMVCにあるModel　ビューに送る機能です
+	　　　{
 		session.invalidate();//httpセッションをクリアするコード セッションはあくまでアプリケーション内にはない 
 		if (error.equals("notLoggedIn")) {
 			model.addAttribute("message", "ログインしてください");
